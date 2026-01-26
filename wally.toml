@@ -1,0 +1,11 @@
+[package]
+name = "warley/robloxprojects"
+version = "0.1.0"
+registry = "https://github.com/UpliftGames/wally-index"
+realm = "shared"
+
+[dependencies]
+Promise = "quenty/promise@3.1.2"
+
+[server-dependencies]
+Firebaseservice = "codjo3/firebaseservice@0.2.0"
