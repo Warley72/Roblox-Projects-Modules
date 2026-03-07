@@ -1,5 +1,6 @@
 {
   "name": "StrutureRoblox",
+
   "tree": {
     "$className": "DataModel",
     "ReplicatedStorage": {
@@ -8,28 +9,22 @@
         "$path": "src/modules"
       }
     },
+
     "ServerScriptService": {
-      "Framework": {
+      "Server": {
         "$className": "Folder",
         "Loader": {
           "$path": "src/server/loaderServer.luau"
-        },
-        "Modules": {
-          "$className": "Folder",
-          "$path": "src/modules"
         }
       }
     },
+    
     "StarterPlayer": {
       "StarterPlayerScripts": {
-        "Framework": {
+        "Client": {
           "$className": "Folder",
           "Loader": {
             "$path": "src/client/loaderClient.luau"
-          },
-          "Modules": {
-            "$className": "Folder",
-            "$path": "src/modules"
           }
         }
       }
