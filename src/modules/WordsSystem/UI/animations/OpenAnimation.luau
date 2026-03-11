@@ -2,23 +2,23 @@ local TweenService = game:GetService("TweenService")
 
 local player = game.Players.LocalPlayer
 local playerGui = player:WaitForChild("PlayerGui")
-local inventoryFrame = playerGui:WaitForChild("Inventory"):WaitForChild("Frame")
+local WorldsFrame = playerGui:WaitForChild("Worlds"):WaitForChild("Frame")
 
-local uiScale = inventoryFrame:FindFirstChild("UIScale")
+local uiScale = WorldsFrame:FindFirstChild("UIScale")
 
 if not uiScale then
 	uiScale = Instance.new("UIScale")
 	uiScale.Scale = 1
-	uiScale.Parent = inventoryFrame
+	uiScale.Parent = WorldsFrame
 end
 
 local isAnimating = false
 
-local function openInventory()
+local function openWorlds()
 	if isAnimating then return end
 	isAnimating = true
 
-	inventoryFrame.Visible = true
+	WorldsFrame.Visible = true
 	uiScale.Scale = 0.8
 
 	local tween = TweenService:Create(
@@ -32,4 +32,4 @@ local function openInventory()
     
 	isAnimating = false
 end
-return openInventory
+return openWorlds
